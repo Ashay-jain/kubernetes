@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: nodejs
+  name: nodejs
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nodejs
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: nodejs
+    spec:
+      containers:
+      - image: 79915010/nodejs-cicd:hello-nodejs
+        name: nodejs-cicd
+        ports:
+        - containerPort: 8000
+        resources: {}
+status: {}

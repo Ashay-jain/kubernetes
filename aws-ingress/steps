@@ -1,0 +1,6 @@
+1. followed the document from https://docs.aws.amazon.com/eks/latest/userguide/alb-ingress.html
+
+2. adding the aws load balancer controller add on https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html
+3. adding IAM ODIC provider for eks cluster https://docs.aws.amazon.com/eks/latest/userguide/enable-iam-roles-for-service-accounts.html
+    
+    eksctl utils associate-iam-oidc-provider --cluster testeks --approve

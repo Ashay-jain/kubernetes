@@ -1,0 +1,3 @@
+1. create a new iam user don't give any permission to user.
+2. follow the doc and upate the configmap aws-auth with the new user setting. https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html
+3. the user will not be having permission, create role and rolebinding for user.
